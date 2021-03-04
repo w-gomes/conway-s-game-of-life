@@ -54,7 +54,8 @@ include(cmake/static_analyzers.cmake)
 
 ############################ project files ############################
 
-add_executable(example src/main.cpp)
+add_executable(example src/main.cpp
+                       src/parser.cpp)
 
 target_link_libraries(
   example
